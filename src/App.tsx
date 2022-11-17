@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div>
       <h1>Basic Example</h1>
-      <Modal name="xx" />
+      <Modal name='saul' />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
