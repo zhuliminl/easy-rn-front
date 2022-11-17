@@ -1,10 +1,12 @@
-import * as React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import * as React from "react"
+import { Routes, Route, Outlet, Link } from "react-router-dom"
+import Modal from "./components/Modal";
 
 export default function App() {
   return (
     <div>
       <h1>Basic Example</h1>
+      <Modal name="xx" />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
