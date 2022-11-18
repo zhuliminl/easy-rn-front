@@ -1,8 +1,10 @@
 import * as React from "react"
 import { Routes, Route, Outlet, Link } from "react-router-dom"
-import Modal from "./components/Modal";
+import Modal from '@components/Modal'
+import {breakpoints} from '@styles/breakpoints'
 
 export default function App() {
+  console.log('saul', breakpoints)
   return (
     <div>
       <h1>Basic Example</h1>
