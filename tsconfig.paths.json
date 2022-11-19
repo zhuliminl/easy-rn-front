@@ -20,6 +20,9 @@
       "@pages/*": [
         "src/pages/*"
       ],
+      "@pages/Common/*": [
+        "src/pages/Common/*"
+      ],
       "@utils/*": [
         "src/utils/*"
       ]

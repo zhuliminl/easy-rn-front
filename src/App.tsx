@@ -1,15 +1,11 @@
 import * as React from "react"
 import { Routes, Route, Outlet, Link } from "react-router-dom"
-import Modal from '@components/Modal'
 import Home from '@pages/Home'
-import {breakpoints} from '@styles/breakpoints'
+import Layout from '@pages/Common/Layout'
 
 export default function App() {
-  console.log('saul', breakpoints)
   return (
     <div>
-      <h1>Basic Example</h1>
-      <Modal name='saul' />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -18,30 +14,6 @@ export default function App() {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
-    </div>
-  );
-}
-
-function Layout() {
-  return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/nothing-here">Nothing Here</Link>
-          </li>
-        </ul>
-      </nav>
-      <Outlet />
     </div>
   );
 }
