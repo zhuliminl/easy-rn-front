@@ -6,6 +6,7 @@ import { jsx ,css} from '@emotion/react'
 import Theme from '@theme'
 
 export default () => {
+  console.log('saul', css, jsx)
   return (
     <div
       css={{
@@ -15,7 +16,7 @@ export default () => {
         }
       }}
     >
-      This has a hotpink background.
+      xxxxxx
       <div css={titleStyle}>jjjjjj</div>
     </div>
   )
