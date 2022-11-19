@@ -1,6 +1,5 @@
-
 // const 
-export const Theme = {
+export default {
   // 布局设定
   //  边框设定
   BorderWidth1: 1,

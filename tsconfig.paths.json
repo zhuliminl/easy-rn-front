@@ -11,6 +11,9 @@
       "@styles/*": [
         "src/styles/*"
       ],
+      "@theme": [
+        "src/styles/theme.ts"
+      ],
       "@cons/*": [
         "src/constants/*"
       ],
