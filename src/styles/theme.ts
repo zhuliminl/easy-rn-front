@@ -1,13 +1,16 @@
 // const 
 export default {
   // 布局设定
+  NavHeight: 60,
+  SideBarWidth: 260,
   //  边框设定
   BorderWidth1: 1,
   BorderRadius1: 1,
   // 颜色设定
+  BorderColor: '#e1e4e8',
   ColorTheme: '#FFF',
   ColorWhite: '#FFF',
-  ColorBg1: '#FFF',
+  ColorBg1: '#f8f9fa',
   ColorBg2: '#EEE',
   TextColor1: '',
   TextColor2: '',
