@@ -12,10 +12,10 @@ export default () => {
       <Line />
 
       <div style={{ width: 300, }}>
-        <PaddingIt padding={10}>
-          <HoverIt>
-            <div style={{ backgroundColor: 'green', height: 90, }}>xxx</div>
-          </HoverIt>
+        <PaddingIt padding={10} hover={false} border radius={10}>
+          <div style={{
+            height: 30,
+          }}>xxx</div>
         </PaddingIt>
       </div>
     </div>
