@@ -15,7 +15,7 @@ export function PlusIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         d="M10 4.167v11.666M4.167 10h11.666"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"

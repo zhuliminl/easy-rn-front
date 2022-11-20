@@ -15,7 +15,7 @@ export function EditIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <g
         clipPath="url(#edit-icon_svg__edit-icon_svg__clip0_3427_2475)"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"

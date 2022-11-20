@@ -24,19 +24,19 @@ export function MoreHorizontalIcon(props: IconProps) {
         cx={4.167}
         cy={10}
         r={1.741}
-        fill={color || "var(--expo-theme-icon-default)"}
+        fill={color || "var(--easy-theme-icon-default)"}
       />
       <circle
         cx={10}
         cy={10}
         r={1.741}
-        fill={color || "var(--expo-theme-icon-default)"}
+        fill={color || "var(--easy-theme-icon-default)"}
       />
       <circle
         cx={15.833}
         cy={10}
         r={1.741}
-        fill={color || "var(--expo-theme-icon-default)"}
+        fill={color || "var(--easy-theme-icon-default)"}
       />
     </svg>
   );

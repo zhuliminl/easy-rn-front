@@ -22,11 +22,11 @@ export function OpenInternalIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         d="M6.28 4.524l8.78 8.78L17.692 1.89 6.28 4.524z"
-        fill={color || "var(--expo-theme-icon-default)"}
+        fill={color || "var(--easy-theme-icon-default)"}
       />
       <path
         d="M10.67 8.913l-8.78 8.78"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2.057}
         strokeLinecap="round"
       />

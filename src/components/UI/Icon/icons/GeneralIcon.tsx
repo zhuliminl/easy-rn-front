@@ -20,7 +20,7 @@ export function GeneralIcon(props: IconProps) {
         width={8.75}
         height={8.75}
         rx={1}
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={3.5}
         mask="url(#general-icon_svg__a)"
       />
@@ -32,7 +32,7 @@ export function GeneralIcon(props: IconProps) {
         width={8.75}
         height={8.75}
         rx={1}
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={3.5}
         mask="url(#general-icon_svg__b)"
       />
@@ -45,7 +45,7 @@ export function GeneralIcon(props: IconProps) {
         width={8.75}
         height={8.75}
         rx={1}
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={3.5}
         mask="url(#general-icon_svg__c)"
       />
@@ -57,7 +57,7 @@ export function GeneralIcon(props: IconProps) {
         width={8.75}
         height={8.75}
         rx={1}
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={3.5}
         mask="url(#general-icon_svg__d)"
       />

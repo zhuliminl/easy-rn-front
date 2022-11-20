@@ -22,7 +22,7 @@ export function ArrowLeftIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         d="M15.833 10H4.167M10 15.833L4.167 10 10 4.167"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -22,7 +22,7 @@ export function ArrowDownIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         d="M10 4.167v11.666m0 0L4.167 10M10 15.833L15.833 10"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"

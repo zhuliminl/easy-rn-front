@@ -15,13 +15,13 @@ export function ChartIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         d="M18.928 18.887H1.072V1.147"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2}
         strokeLinecap="round"
       />
       <path
         d="M4.477 12.993L9.22 7.007l4.329 5.763 4.565-5.763"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"

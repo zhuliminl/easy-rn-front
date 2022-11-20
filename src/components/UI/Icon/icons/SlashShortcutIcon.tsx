@@ -22,7 +22,7 @@ export function SlashShortcutIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         d="M16 .5H4A3.5 3.5 0 00.5 4v12A3.5 3.5 0 004 19.5h12a3.5 3.5 0 003.5-3.5V4A3.5 3.5 0 0016 .5zM6.5 16l7-12"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
       />
     </svg>
   );

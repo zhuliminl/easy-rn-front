@@ -24,7 +24,7 @@ export function StatusCanceledIcon(props: IconProps) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M0 10C0 4.5 4.5 0 10 0s10 4.5 10 10-4.5 10-10 10S0 15.5 0 10zm6-1a1 1 0 100 2h8a1 1 0 100-2H6z"
-        fill={color || "var(--expo-theme-icon-default)"}
+        fill={color || "var(--easy-theme-icon-default)"}
       />
     </svg>
   );

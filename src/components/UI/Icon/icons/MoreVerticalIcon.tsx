@@ -25,21 +25,21 @@ export function MoreVerticalIcon(props: IconProps) {
         cy={15.833}
         r={1.741}
         transform="rotate(-90 10 15.833)"
-        fill={color || "var(--expo-theme-icon-default)"}
+        fill={color || "var(--easy-theme-icon-default)"}
       />
       <circle
         cx={10}
         cy={10}
         r={1.741}
         transform="rotate(-90 10 10)"
-        fill={color || "var(--expo-theme-icon-default)"}
+        fill={color || "var(--easy-theme-icon-default)"}
       />
       <circle
         cx={10}
         cy={4.167}
         r={1.741}
         transform="rotate(-90 10 4.167)"
-        fill={color || "var(--expo-theme-icon-default)"}
+        fill={color || "var(--easy-theme-icon-default)"}
       />
     </svg>
   );

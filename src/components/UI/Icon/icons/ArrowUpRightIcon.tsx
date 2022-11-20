@@ -22,7 +22,7 @@ export function ArrowUpRightIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         d="M5.875 14.125l8.25-8.25m0 0v8.25m0-8.25h-8.25"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2}
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -15,7 +15,7 @@ export function CheckIcon(props: IconProps) {
       {title ? <title id={titleId}>{title}</title> : null}
       <path
         d="M16.667 5L7.5 14.167 3.333 10"
-        stroke={color || "var(--expo-theme-icon-default)"}
+        stroke={color || "var(--easy-theme-icon-default)"}
         strokeWidth={2.051}
         strokeLinecap="round"
         strokeLinejoin="round"
