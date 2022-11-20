@@ -18,8 +18,9 @@ export default {
   FontSize1: '',
   FontSize2: '',
   FontSize3: '',
-  IconSize1: '',
-  IconSize2: '',
+  IconSize1: 24,
+  IconSize2: 36,
+  IconColor1: '#333',
   // 尺寸设定
   Width1: 1,
   Width2: 1,
