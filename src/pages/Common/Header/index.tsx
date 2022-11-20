@@ -1,22 +1,20 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-
 import React from 'react'
-import { jsx, css } from '@emotion/react'
 import Theme from '@theme'
+import styled from 'styled-components'
 
 export default () => {
+
   return (
-    <div css={containerStyle} >
-      <div css={{}}>jjjjjj</div>
-    </div>
+    <Container>
+      <div >jjjjjj</div>
+    </Container>
   )
 }
 
-const containerStyle = css({
-  height: Theme.NavHeight,
-  backgroundColor: Theme.ColorWhite,
-  borderBottomWidth: Theme.BorderWidth1,
-  borderBottomColor: Theme.BorderColor,
-  borderBottomStyle: 'solid',
-})
+const Container = styled.div`
+height:${Theme.NavHeight}px;
+background-color:${Theme.ColorWhite};
+border-bottom: ${Theme.BorderWidth1}px solid ${Theme.BorderColor};
+
+  
+`

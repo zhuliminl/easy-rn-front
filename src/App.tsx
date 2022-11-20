@@ -1,8 +1,4 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-
 import React from "react"
-import { jsx, css } from '@emotion/react'
 import { Routes, Route, Outlet, Link } from "react-router-dom"
 import Home from '@pages/Home'
 import About from '@pages/About'
