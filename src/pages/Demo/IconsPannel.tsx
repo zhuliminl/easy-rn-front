@@ -7,7 +7,9 @@ export default () => {
 
   const Icons = Object.keys(Icon).map((key, i) => {
     const C = Icon[key]
-    return <C color='#111' width={size} height={size} />
+    return <C 
+    // color='red'
+     width={size} height={size} />
   })
 
   return (

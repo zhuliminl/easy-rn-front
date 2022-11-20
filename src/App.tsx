@@ -10,6 +10,7 @@ import Layout from '@pages/Common/Layout'
 import NotFound from '@pages/NotFound'
 import Demo from '@pages/Demo'
 import Theme from '@theme'
+import './styles/global.css'
 
 export default () => {
   return (
