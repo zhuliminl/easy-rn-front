@@ -1,5 +1,5 @@
 import React from 'react'
-import * as Icon from '@ui/Icon'
+import * as Icon from '@components/UI/Icon'
 
 const size = 20
 

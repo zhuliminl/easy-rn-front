@@ -26,7 +26,7 @@ export default {
   Width2: 1,
   Height1: 1,
   Height2: 1,
-  Space1: 1,
+  Space1: 4,
   Space2: 1,
   // 预设样式
   StyleShadow1: {
