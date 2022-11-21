@@ -8,10 +8,12 @@ export default styled.div<{
   paddingV?: number,
   paddingH?: number,
   hover?: boolean,
+  active?: boolean,
   border?: boolean,
   radius?: number,
   center?: boolean,
   row?: boolean,
+  height?: number,
   column?: boolean,
 }>`
   transition: background-color 0.3s linear;
@@ -32,6 +34,13 @@ export default styled.div<{
   )}
 
   ${(props) => (
+    props.height && css`
+      height: ${props.height}px;
+    `
+  )}
+
+
+  ${(props) => (
     props.column && css`
       flex-direction: column;
     `
@@ -41,7 +50,13 @@ export default styled.div<{
     props.hover && css`
      &:hover {
       background-color: ${Theme.ColorBg2};
-  }
+    }
+    `
+  )}
+
+  ${(props) => (
+    props.active && css`
+      background-color: ${Theme.ColorBg2};
     `
   )}
 

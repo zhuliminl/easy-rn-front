@@ -34,12 +34,24 @@ export default {
   IconColor1: '#333',
 
   // 尺寸设定
-  Width1: 1,
-  Width2: 1,
-  Height1: 1,
-  Height2: 1,
+  // Width1: 1,
+  // Width2: 1,
+  Height1: 10,
+  Height2: 20,
+  Height3: 30,
+  Height4: 40,
+  Height5: 50,
+  Height6: 60,
+  Height7: 70,
+  Height8: 80,
+  Height9: 90,
+
   Space1: 4,
-  Space2: 1,
+  Space2: 8,
+  Space3: 10,
+  Space4: 20,
+  Space5: 40,
+
   // 预设样式
   StyleShadow1: {
 

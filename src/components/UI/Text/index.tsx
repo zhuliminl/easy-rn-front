@@ -9,12 +9,19 @@ export default styled.div<{
   middle?: boolean,
   large?: boolean,
   huge?: boolean,
+  noSelect?: boolean,
 }>`
   display: flex;
 
   ${(props) => (
     props.bold && css`
       font-weight: bold;
+    `
+  )}
+
+  ${(props) => (
+    props.noSelect && css`
+      user-select: none;
     `
   )}
 
