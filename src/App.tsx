@@ -8,6 +8,7 @@ import Demo from '@pages/Demo'
 import Theme from '@theme'
 import Toast from '@components/Toast'
 import './styles/global.css'
+import ReactTooltip from 'react-tooltip';
 
 export default () => {
   return (
@@ -21,6 +22,7 @@ export default () => {
         </Route>
       </Routes>
       <Toast />
+      <ReactTooltip delayShow={300} />
     </>
   )
 }

@@ -8,12 +8,12 @@ export default () => {
     <div>
       <PaddingIt padding={Theme.Space2} column>
         <Space />
-        <PaddingIt active hover radius={Theme.BorderRadius1} paddingH={Theme.Space3} bgColor={Theme.ColorWhite} height={Theme.Height4} row style={{ alignItems: 'center', }}>
+        <PaddingIt data-tip="hello world" active hover radius={Theme.BorderRadius1} paddingH={Theme.Space3} bgColor={Theme.ColorWhite} height={Theme.Height4} row style={{ alignItems: 'center', }}>
           <IconActivity />
           <Text noSelect middle style={{ marginLeft: Theme.Space2 }}>Home</Text>
         </PaddingIt>
         <Space />
-        <PaddingIt hover radius={Theme.BorderRadius1} paddingH={Theme.Space3} bgColor={Theme.ColorWhite} height={Theme.Height4} row style={{ alignItems: 'center', }}>
+        <PaddingIt data-tip="IconApple" hover radius={Theme.BorderRadius1} paddingH={Theme.Space3} bgColor={Theme.ColorWhite} height={Theme.Height4} row style={{ alignItems: 'center', }}>
           <IconApple />
           <Text noSelect middle style={{ marginLeft: Theme.Space2 }}>Home</Text>
         </PaddingIt>
