@@ -1,10 +1,14 @@
 import React from 'react'
 import IconsPannel from './IconsPannel'
 import { IconActivity, IconAddPhoto } from '@components/UI/Icon'
-import { Desc, Line, PaddingIt, Text, Space } from '@components/UI'
+import { Desc, Line, PaddingIt, Text, Space, Modal } from '@components/UI'
 import Theme from '@styles/theme'
+import {useModal} from '@hooks/useModal'
+
 
 export default () => {
+  const modal1 = useModal()
+
   return (
     <div>
       <IconActivity />
@@ -13,8 +17,12 @@ export default () => {
       <Line />
 
       <div style={{ width: 300, }}>
-        <PaddingIt padding={10} hover border radius={20} bgColor={Theme.ColorWhite} column center style={{ height: 90}}>
-          <Text normal >收看</Text>
+        <PaddingIt padding={10} hover border radius={20} bgColor={Theme.ColorWhite} column center style={{ height: 90}}
+        onClick={() => {
+          modal1.open()
+        }}
+        >
+          <Text normal >Modal</Text>
           <Desc>
             空间反垄断
           </Desc>
@@ -24,6 +32,8 @@ export default () => {
             空间反垄断
           </Desc>
       </div>
+      <Modal ref={modal1.ref}>
+      </Modal>
     </div>
   )
 }

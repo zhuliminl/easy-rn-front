@@ -16,7 +16,7 @@ export default () => {
     <div style={{flexDirection: 'row', display: 'flex', flexWrap: 'wrap'}}>
       {Icons.map((I, i) => {
         return (
-          <div style={{display: 'flex',padding: 10, height: size, width: size,}}>
+          <div key={i} style={{display: 'flex',padding: 10, height: size, width: size,}}>
             {I}
           </div>
         )
