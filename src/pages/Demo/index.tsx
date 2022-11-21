@@ -1,7 +1,7 @@
 import React from 'react'
 import IconsPannel from './IconsPannel'
 import { IconActivity, IconAddPhoto } from '@components/UI/Icon'
-import { Desc, Line, PaddingIt, Text, Space, Modal } from '@components/UI'
+import { Desc, Line, PaddingIt, Text, Space, Modal, Card } from '@components/UI'
 import Theme from '@styles/theme'
 import {useModal} from '@hooks/useModal'
 
@@ -31,8 +31,10 @@ export default () => {
           <Desc>
             空间反垄断
           </Desc>
+        <Card showdow border width={300} radius={Theme.BorderRadius2}/>
       </div>
       <Modal ref={modal1.ref}>
+        <Card radius={Theme.BorderRadius1} showdow/>
       </Modal>
     </div>
   )
