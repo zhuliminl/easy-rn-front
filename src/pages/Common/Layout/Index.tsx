@@ -35,18 +35,17 @@ const ContentContainer = styled.div`
 `
 
 const SideBarContainer = styled.div`
-display:flex;
-flex-direction:column;
-width: ${Theme.SideBarWidth}px;
-background-color:${Theme.ColorWhite};
-border-right-width:1px;
-border-right-color:${Theme.BorderColor};
-border-right-style:solid;
+  display:flex;
+  flex-direction:column;
+  width: ${Theme.SideBarWidth}px;
+  background-color:${Theme.ColorWhite};
+  border-right-width:1px;
+  border-right-color:${Theme.BorderColor};
+  border-right-style:solid;
 `
 const RightContainer = styled.div`
-flex: 1;
-display:flex;
-flex-direction:column;
-  
+  flex: 1;
+  display:flex;
+  flex-direction:column;
 `
 

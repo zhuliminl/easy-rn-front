@@ -5,22 +5,34 @@ export default {
   SideBarWidth: 260,
   //  边框设定
   BorderWidth1: 1,
-  BorderRadius1: 1,
+  BorderRadius1: 4,
+  BorderRadius2: 8,
+  BorderRadius3: 16,
+
   // 颜色设定
   BorderColor: '#e1e4e8',
-  ColorTheme: '#FFF',
+
+  ColorTheme: 'blue',
   ColorWhite: '#FFF',
+
   ColorBg1: '#f8f9fa',
   ColorBg2: '#EEE',
-  TextColor1: '',
-  TextColor2: '',
-  TextColor3: '',
-  FontSize1: '',
-  FontSize2: '',
-  FontSize3: '',
+
+  TextColor1: '#111',
+  TextColor3: '#333',
+  TextColor6: '#666',
+  TextColor9: '#999',
+
+  FontSize1: 12,
+  FontSize2: 14,
+  FontSize3: 16,
+  FontSize4: 18,
+  FontSize5: 24,
+
   IconSize1: 24,
   IconSize2: 36,
   IconColor1: '#333',
+
   // 尺寸设定
   Width1: 1,
   Width2: 1,

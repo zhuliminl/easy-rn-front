@@ -1,3 +1,5 @@
 export { default as Line } from './Line'
 export { default as PaddingIt  } from './PaddingIt'
-export { default as HoverIt  } from './HoverIt'
+export { default as Text  } from './Text'
+export { default as Desc  } from './Desc'
+export { default as Space  } from './Space'
