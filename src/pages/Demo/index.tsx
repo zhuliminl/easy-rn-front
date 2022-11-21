@@ -4,21 +4,17 @@ import { IconActivity, IconAddPhoto } from '@components/UI/Icon'
 import { Desc, Line, PaddingIt, Text, Space, Modal, Card } from '@components/UI'
 import Theme from '@styles/theme'
 import { useModal } from '@hooks/useModal'
-import { useToast } from '@store/toast'
+import { useCloseToast, useShowToast, useToastIsShow, useToastTitle } from '@store/toast'
 
 
 export default () => {
   const modal1 = useModal()
-  const Toast = useToast()
+  const showToast = useShowToast()
+  const closeToast = useCloseToast()
+  const isShow = useToastIsShow()
+  const title = useToastTitle()
 
   useEffect(() => {
-    Toast.showToast('xx')
-    console.log('saul LLLL', Toast)
-
-    setTimeout(() => {
-      console.log('saul LLLL', Toast)
-    }, 300);
-
 
   }, [])
 
@@ -32,12 +28,14 @@ export default () => {
       <div style={{ width: 300, }}>
         <PaddingIt padding={10} hover border radius={20} bgColor={Theme.ColorWhite} column center style={{ height: 90 }}
           onClick={() => {
-            modal1.open()
+            isShow ? closeToast() :
+              showToast('已经加入收藏')
+            // modal1.open()
           }}
         >
           <Text normal >Modal</Text>
           <Desc>
-            {Toast.title}
+            {title}
           </Desc>
         </PaddingIt>
         <Space height={100} />

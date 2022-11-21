@@ -14,6 +14,7 @@ export default {
 
   ColorTheme: 'blue',
   ColorWhite: '#FFF',
+  ColorBgCoast: '#333',
 
   ColorBg1: '#f8f9fa',
   ColorBg2: '#EEE',

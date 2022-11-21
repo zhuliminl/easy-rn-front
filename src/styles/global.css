@@ -3,6 +3,10 @@
   --easy-theme-icon-default: #333;
 }
 
+.showdow1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 /* .ReactModal__Overlay {
   opacity: 0;
   transform: translateX(-100px);
