@@ -17,6 +17,9 @@
       "@hooks/*": [
         "src/hooks/*"
       ],
+      "@store/*": [
+        "src/store/*"
+      ],
       "@environment/*": [
         "src/environments/*"
       ],
