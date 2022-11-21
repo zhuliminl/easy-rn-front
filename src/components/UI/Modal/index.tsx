@@ -6,7 +6,11 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('#root')
 
-export default React.forwardRef<any, any>((props, ref) => {
+type Props = {
+  usePop?: boolean,
+} & any
+
+export default React.forwardRef<Props, any>((props, ref) => {
   const [visible, setVisible] = useState(false)
 
 
@@ -24,10 +28,26 @@ export default React.forwardRef<any, any>((props, ref) => {
     <Modal
       isOpen={visible}
       onAfterOpen={() => { }}
-      onRequestClose={() => { 
+      onRequestClose={() => {
         setVisible(false)
       }}
-      style={customStyles}
+      style={{
+        content: {
+          top: '50%',
+          left: '50%',
+          right: 'auto',
+          bottom: 'auto',
+          marginRight: '-50%',
+          transform: 'translate(-50%, -50%)',
+          padding: 0,
+          margin: 0,
+          border: 'none',
+          borderRadius: Theme.BorderRadius1,
+        },
+        overlay: {
+          backgroundColor: 'rgb(0,0,0,0.4)'
+        }
+      }}
       contentLabel="Example Modal"
     >
       {props.children}
@@ -35,7 +55,8 @@ export default React.forwardRef<any, any>((props, ref) => {
   )
 })
 
-const customStyles = {
+const customStyles =
+{
   content: {
     top: '50%',
     left: '50%',
