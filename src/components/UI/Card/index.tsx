@@ -7,7 +7,7 @@ export default styled.div<{
   width?: number,
   border?: boolean,
   radius?: number,
-  showdow?: boolean,
+  shadow?: boolean,
   shadow1?: boolean,
 }>`
   display: flex;
@@ -20,7 +20,7 @@ export default styled.div<{
   )}
 
   ${(props) => (
-    props.showdow && css`
+    props.shadow && css`
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.25); */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
     `
@@ -39,7 +39,7 @@ export default styled.div<{
     props.height ? css`
       height: ${props.height}px;
     `: css`
-      height: 100px;
+      /* height: 100px; */
     `
   )}
 

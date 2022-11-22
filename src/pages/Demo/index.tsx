@@ -29,8 +29,8 @@ export default () => {
         <PaddingIt padding={10} hover border radius={20} bgColor={Theme.ColorWhite} column center style={{ height: 90 }}
           onClick={() => {
             isShow ? closeToast() :
-              showToast('已经加入收藏')
-            // modal1.open()
+              // showToast('已经加入收藏')
+            modal1.open()
           }}
         >
           <Text normal >Modal</Text>
@@ -42,10 +42,10 @@ export default () => {
         <Desc>
           空间反垄断
         </Desc>
-        <Card showdow border width={300} radius={Theme.BorderRadius2} />
+        <Card shadow border width={300} radius={Theme.BorderRadius2} height={100} />
       </div>
       <Modal ref={modal1.ref}>
-        <Card radius={Theme.BorderRadius1} showdow />
+        <Card radius={Theme.BorderRadius1} shadow height={100}/>
       </Modal>
     </div>
   )

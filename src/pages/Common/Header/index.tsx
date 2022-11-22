@@ -1,19 +1,23 @@
 import React from 'react'
 import Theme from '@theme'
 import styled from 'styled-components'
-import { useModal } from '@hooks/useModal'
-import { Modal } from '@components/UI'
+import { usePopUp } from '@hooks/usePopUp'
+import { PopUp, Card, Space } from '@components/UI'
 
 export default () => {
-  const modal1 = useModal()
+  const popup1 = usePopUp()
 
   return (
     <Container>
       <div >Header</div>
       <div onClick={() => {
-        modal1.open()
+        popup1.open()
       }}>菜单</div>
-      <Modal ref={modal1.ref} />
+      <PopUp ref={popup1.ref} left={10}>
+        <Card shadow border width={200}>
+          <Space height={Theme.Height9 * 3}/>
+        </Card>
+        </PopUp>
     </Container>
   )
 }
