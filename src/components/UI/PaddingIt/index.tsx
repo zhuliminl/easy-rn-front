@@ -51,6 +51,7 @@ export default styled.div<{
     props.hover && css`
      &:hover {
       background-color: ${Theme.ColorBg2};
+      opacity: 0.8;
     }
     `
   )}

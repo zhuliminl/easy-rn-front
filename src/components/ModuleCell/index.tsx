@@ -1,7 +1,8 @@
 import React from 'react'
 import Theme from '@theme'
-import { PaddingIt, Text } from '@components/UI'
+import { PaddingIt, Text, Box } from '@components/UI'
 import { IconChevronRight } from '@components/UI/Icon'
+
 
 
 type Iprops = {
@@ -37,10 +38,16 @@ export default ({
       height={Theme.Height4}
       style={{ alignItems: 'center', }}>
       {!onlyText && <Icon />}
+      <Box width={Theme.Space1} />
       <Text
         noSelect
-        middle={!onlyText}
-        style={{ marginLeft: Theme.Space2, flex: 1,}}>{title}</Text>
+        bold
+        normal={!onlyText}
+        style={{
+          marginLeft: Theme.Space2,
+          flex: 1,
+          color: Theme.TextColor3,
+        }}>{title}</Text>
       {withArrow && <IconChevronRight color={Theme.TextColor9} />}
     </PaddingIt>
   )
