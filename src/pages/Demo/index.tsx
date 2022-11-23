@@ -46,7 +46,13 @@ export default () => {
       </div>
       <Modal ref={modal1.ref}>
         <Card radius={Theme.BorderRadius1} shadow height={100}/>
+        <Foo />
       </Modal>
     </div>
   )
+}
+
+const Foo = () => {
+  console.log('saul FFFFFFf')
+  return <div>FFF</div>
 }
