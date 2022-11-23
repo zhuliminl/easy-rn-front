@@ -55,6 +55,9 @@ export default {
   Space3: 10,
   Space4: 20,
   Space5: 40,
+  ButtonWidth1: 90,
+  ButtonWidth2: 90,
+  ButtonHeight: 34,
 
   // 预设样式
   StyleShadow1: {

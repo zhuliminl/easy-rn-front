@@ -8,6 +8,7 @@ export default styled.div<{
   paddingV?: number,
   paddingH?: number,
   hover?: boolean,
+  hover2?: boolean,
   active?: boolean,
   border?: boolean,
   radius?: number,
@@ -50,6 +51,15 @@ export default styled.div<{
     props.hover && css`
      &:hover {
       background-color: ${Theme.ColorBg2};
+    }
+    `
+  )}
+
+  ${(props) => (
+    props.hover2 && css`
+     &:hover {
+      border: 1px solid ${Theme.BorderColor};
+      background-color: ${Theme.ColorBg1};
     }
     `
   )}
