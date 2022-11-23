@@ -13,10 +13,10 @@ export default () => {
       <div >Header</div>
       <div onClick={() => {
         popup1.open()
-        popup2.open()
+        // popup2.open()
       }}>菜单</div>
 
-      <Pop ref={popup1.ref} right={1} top={1} >
+      <Pop ref={popup1.ref} left={10} top={10} >
         <Card shadow border width={200}>
           <Space height={Theme.Height9 * 3} />
           <Foo />

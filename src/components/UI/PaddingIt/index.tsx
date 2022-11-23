@@ -56,7 +56,7 @@ export default styled.div<{
 
   ${(props) => (
     props.active && css`
-      background-color: ${Theme.ColorBg2};
+      background-color: ${Theme.ColorBg3};
     `
   )}
 

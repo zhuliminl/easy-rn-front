@@ -18,6 +18,7 @@ export default {
 
   ColorBg1: '#f8f9fa',
   ColorBg2: '#EEE',
+  ColorBg3: '#F0F1F2',
 
   TextColor1: '#111',
   TextColor3: '#333',

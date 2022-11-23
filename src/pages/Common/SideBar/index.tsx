@@ -1,34 +1,49 @@
 import React from 'react'
 import { PaddingIt, Text, Space, Line } from '@components/UI'
 import Theme from '@styles/theme'
-import { IconActivity, IconAndroid, IconApple } from '@components/UI/Icon'
+import { IconActivity, IconAddPhoto, IconAndroid, IconApple, IconAppleAppStore, IconUpdate } from '@components/UI/Icon'
+import ModuleCell from '@components/ModuleCell'
+import ModuleTitle from '@components/ModuleTitle'
 
 export default () => {
   return (
     <div>
       <PaddingIt padding={Theme.Space2} column>
+        <ModuleCell Icon={IconAddPhoto} title='Apple' onPress={() => {
+
+        }} />
         <Space />
-        <PaddingIt data-tip="hello world" active hover radius={Theme.BorderRadius1} paddingH={Theme.Space3} bgColor={Theme.ColorWhite} height={Theme.Height4} row style={{ alignItems: 'center', }}>
-          <IconActivity />
-          <Text noSelect middle style={{ marginLeft: Theme.Space2 }}>Home</Text>
-        </PaddingIt>
+        <ModuleCell Icon={IconAppleAppStore} title='Store' onPress={() => {
+
+        }} />
         <Space />
-        <PaddingIt data-tip="IconApple" hover radius={Theme.BorderRadius1} paddingH={Theme.Space3} bgColor={Theme.ColorWhite} height={Theme.Height4} row style={{ alignItems: 'center', }}>
-          <IconApple />
-          <Text noSelect middle style={{ marginLeft: Theme.Space2 }}>Home</Text>
-        </PaddingIt>
+        <ModuleCell Icon={IconUpdate} title='Update' onPress={() => {
+
+        }} />
+        <Space />
+        <ModuleCell active onlyText title='Update' onPress={() => {
+
+        }} />
         <Space />
       </PaddingIt>
-      <Text normal style={{ color: Theme.TextColor1, marginLeft: Theme.Space2 }}>Projects</Text>
+      <ModuleTitle title='Project' />
       <Space height={Theme.Space2} />
       <Line />
       <PaddingIt padding={Theme.Space2} column>
+        <ModuleCell Icon={IconAddPhoto} title='Apple' onPress={() => {
+
+        }} />
         <Space />
-        <PaddingIt hover radius={Theme.BorderRadius1} paddingH={Theme.Space3} bgColor={Theme.ColorWhite} height={Theme.Height4} row style={{ alignItems: 'center', }}>
-          <IconAndroid />
-          <Text noSelect middle style={{ marginLeft: Theme.Space2 }}>Home</Text>
-        </PaddingIt>
+        <ModuleCell Icon={IconAppleAppStore} title='Store' onPress={() => {
+
+        }} />
+        <Space />
+        <ModuleCell Icon={IconUpdate} title='Update' onPress={() => {
+
+        }} />
+        <Space />
       </PaddingIt>
+
     </div>
   )
 }
