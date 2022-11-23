@@ -3,6 +3,8 @@ export default {
   // 布局设定
   NavHeight: 60,
   SideBarWidth: 260,
+  LayoutIntroHeight: 90,
+  LayoutContentWidth: 1200,
   //  边框设定
   BorderWidth1: 1,
   BorderRadius1: 4,

@@ -22,7 +22,6 @@ export default () => {
 }
 
 const Container = styled.div`
-  background-color: ${Theme.ColorBg1};
   flex-direction:column;
   height:100vh;
   display:flex;
