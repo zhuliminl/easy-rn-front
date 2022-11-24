@@ -5,6 +5,12 @@ export default {
   SideBarWidth: 260,
   LayoutIntroHeight: 90,
   LayoutContentWidth: 1200,
+
+  // 阴影样式
+  shadow1: '',
+  shadow2: '',
+  shadow3: '',
+
   //  边框设定
   BorderWidth1: 1,
   BorderRadius1: 4,
@@ -56,7 +62,7 @@ export default {
   Space4: 20,
   Space5: 40,
   ButtonWidth1: 90,
-  ButtonWidth2: 90,
+  ButtonWidth2: 100,
   ButtonHeight: 34,
 
   // 预设样式
