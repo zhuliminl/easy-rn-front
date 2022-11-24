@@ -8,7 +8,7 @@ import BoxIcon from '@components/BoxIcon'
 type IProps = {
   title: string,
   Icon: any,
-  renderBottom: () => void,
+  renderBottom: () => React.ReactNode,
 }
 
 export default ({
@@ -36,6 +36,7 @@ export default ({
         <LargeTitle title={title} />
       </PaddingIt>
       <Space height={Theme.Height3} />
+      {renderBottom()}
     </PaddingIt>
   )
 }

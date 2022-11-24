@@ -29,7 +29,8 @@ export default styled.div<{
   ${(props) => (
     props.shadow1 && css`
     box-shadow:
-    0 10px 20px 6px rgb(0 0 0 / 25%), 0 3px 6px 0px rgb(0 0 0 / 25%);
+    /* 0 10px 20px 6px rgb(0 0 0 / 25%), 0 3px 6px 0px rgb(0 0 0 / 25%); */
+    0 10px 20px rgba(0,0,0,.1),0 3px 6px rgba(0,0,0,.05);
 
     `
   )}

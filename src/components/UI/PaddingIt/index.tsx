@@ -51,7 +51,7 @@ export default styled.div<{
     props.hover && css`
      &:hover {
       background-color: ${Theme.ColorBg2};
-      opacity: 0.8;
+      opacity: 0.9;
     }
     `
   )}
@@ -59,7 +59,7 @@ export default styled.div<{
   ${(props) => (
     props.hover2 && css`
      &:hover {
-      border: 1px solid ${Theme.BorderColor};
+      outline: 1px solid ${Theme.BorderColor};
       background-color: ${Theme.ColorBg1};
     }
     `
@@ -73,7 +73,8 @@ export default styled.div<{
 
   ${(props) => (
     props.border && css`
-      border: 1px solid ${Theme.BorderColor};
+      outline: 1px solid ${Theme.BorderColor};
+      /* border: 1px solid ${Theme.BorderColor}; */
     `
   )}
 

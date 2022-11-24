@@ -1,17 +1,17 @@
 import React, { useRef, useEffect, useState, useImperativeHandle } from 'react'
 import reactDom from 'react-dom'
-import { getAppContentDiv } from '@utils/help'
+import { getDivById } from '@utils/help'
 
 interface Props {
   children?: React.ReactNode;
   left?: number,
   top?: number,
   right?: number,
+  bindId: string,
 }
 
 export default React.forwardRef<any, Props>((props, ref) => {
   const [visible, setVisible] = useState(false)
-  const [actualShow, setActualShow] = useState(false)
 
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef)
@@ -19,9 +19,9 @@ export default React.forwardRef<any, Props>((props, ref) => {
   const el = useRef(document.createElement('div'))
 
   useEffect(() => {
-    getAppContentDiv()?.appendChild(el.current)
+    getDivById(props.bindId)?.appendChild(el.current)
     return () => {
-      getAppContentDiv()?.removeChild(el.current)
+      getDivById(props.bindId)?.removeChild(el.current)
     }
   }, [])
 
@@ -56,14 +56,17 @@ export default React.forwardRef<any, Props>((props, ref) => {
     <div
       ref={wrapperRef}
       style={{
-        position: 'fixed',
+        zIndex: 999,
+        position: 'absolute',
         top: 0,
         opacity: !visible ? 0 : 1,
-        transition: 'all .2s',
+        // transition: 'all .8s',
+        transition: '150ms linear all',
         visibility: !visible ? 'hidden' : 'visible',
         ...(props.top && { top: props.top }),
-        ...(props.left && { left: props.left }),
-        ...(props.right && { right: props.right }),
+        ...((props.left || props.left === 0) && { left: props.left }),
+        ...((props.right || props.right === 0) && { right: props.right }),
+        transform: visible? 'translateY(0px)': 'translateY(-10px)',
       }}
     >
       {props.children}

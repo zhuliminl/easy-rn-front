@@ -23,7 +23,7 @@ export default () => {
   return (
     <div>
       <SpaceContainer>
-        <ModuleIntro title='Builds' Icon={IconBuild} renderBottom={() => null} />
+        <ModuleIntro title='Builds' Icon={IconBuild} renderBottom={() => (<div>xxk</div>)} />
       </SpaceContainer>
       <Line />
 
