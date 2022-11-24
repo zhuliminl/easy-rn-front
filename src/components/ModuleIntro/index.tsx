@@ -8,7 +8,7 @@ import BoxIcon from '@components/BoxIcon'
 type IProps = {
   title: string,
   Icon: any,
-  renderBottom: () => React.ReactNode,
+  renderBottom?: () => React.ReactNode,
 }
 
 export default ({
@@ -19,23 +19,21 @@ export default ({
   return (
     <PaddingIt
       column
+      paddingH={Theme.Space2}
       style={{
         backgroundColor: Theme.ColorWhite,
       }}>
-      <Space height={Theme.Height3} />
       <PaddingIt
         row
         style={{
           alignItems: 'center',
         }}>
-        <Box width={Theme.Space4} />
         <BoxIcon Icon={IconBuild}
         //  relativeColor='#999'
         />
         <Box width={Theme.Space3} />
         <LargeTitle title={title} />
       </PaddingIt>
-      <Space height={Theme.Height3} />
       {renderBottom()}
     </PaddingIt>
   )

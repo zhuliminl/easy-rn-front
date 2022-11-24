@@ -4,7 +4,8 @@ export default {
   NavHeight: 60,
   SideBarWidth: 260,
   LayoutIntroHeight: 90,
-  LayoutContentWidth: 1200,
+  // LayoutContentWidth: 1200,
+  LayoutContentWidth: 800,
 
   // 阴影样式
   shadow1: '',

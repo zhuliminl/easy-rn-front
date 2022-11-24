@@ -23,10 +23,26 @@ export default () => {
   return (
     <div>
       <SpaceContainer>
-        <ModuleIntro title='Builds' Icon={IconBuild} renderBottom={() => (<div>xxk</div>)} />
+        <Space height={Theme.Height3} />
+        <ModuleIntro
+          title='Builds'
+          Icon={IconBuild}
+        // renderBottom={() => (<div>xxk</div>)}
+        />
+        <Space height={Theme.Height3} />
       </SpaceContainer>
       <Line />
-
+      <Space height={Theme.Height4} />
+      <SpaceContainer>
+        <Card
+          height={200}
+          style={{
+            width: '100%',
+            backgroundColor: 'green',
+          }}
+        >
+        </Card>
+      </SpaceContainer>
       <Modal ref={modal1.ref}>
         <Card radius={Theme.BorderRadius1} shadow height={100} />
       </Modal>

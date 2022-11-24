@@ -10,7 +10,8 @@ export default ({
 }: Iprops) => {
   return (
     <div style={{
-      margin: 'auto', width: Theme.LayoutContentWidth,
+      margin: 'auto',
+      maxWidth: Theme.LayoutContentWidth,
     }}>
       {children}
     </div>

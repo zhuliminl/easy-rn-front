@@ -9,6 +9,17 @@ export default () => {
   return (
     <div>
       <PaddingIt padding={Theme.Space2} column>
+        <Space height={Theme.Space2} />
+        <ModuleCell Icon={IconAppleAppStore} title='发布' onPress={() => {
+
+        }} />
+        <Space height={Theme.Space3} />
+        <Space height={Theme.Space2} />
+        <ModuleTitle title='Project' />
+        <Space height={Theme.Space2} />
+      </PaddingIt>
+      <Line />
+      <PaddingIt padding={Theme.Space2} column>
         <ModuleCell Icon={IconAddPhoto} title='开发者' onPress={() => {
 
         }} />
