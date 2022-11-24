@@ -5,6 +5,7 @@ import { usePopUp } from '@hooks/usePopUp'
 import { Card, Space, Pop, Box, PaddingIt, Text } from '@components/UI'
 import Logo from '@components/Logo'
 import BoxArrow from '@components/BoxArrow'
+import Avatar from '@components/Avatar'
 
 const ID1 = 'account-selector-container'
 export default () => {
@@ -23,7 +24,7 @@ export default () => {
         hover2
         style={{
           position: 'relative',
-          width: Theme.ButtonWidth2,
+          width: Theme.ButtonWidth3,
           height: Theme.Height4,
           alignItems: 'center'
         }}
@@ -31,6 +32,7 @@ export default () => {
           popup1.open()
         }}
       >
+        <Avatar />
         <Text noSelect bold style={{ flex: 1 }}>{'萤火虫'}</Text>
         <BoxArrow />
       </PaddingIt>
@@ -45,6 +47,9 @@ export default () => {
           <Space height={Theme.Height9 * 3} />
         </Card>
       </Pop> */}
+      <div style={{ flex: 1 }}></div>
+      <Avatar hover />
+      <Box width={Theme.Space5} />
     </Container>
   )
 }

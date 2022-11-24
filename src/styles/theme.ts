@@ -63,7 +63,10 @@ export default {
   Space5: 40,
   ButtonWidth1: 90,
   ButtonWidth2: 100,
+  ButtonWidth3: 150,
   ButtonHeight: 34,
+
+  AvatarSize: 30,
 
   // 预设样式
   StyleShadow1: {
